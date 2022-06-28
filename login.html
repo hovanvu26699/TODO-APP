@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login">
+        <h2 class="titleForm">Login</h2>
+        <form action="javascript:void(0);" id="login-form">
+            <label for="txtUser">Username</label><br>
+            <input type="text" id="txtUser" name="fname" autofocus required><br>
+            <label for="txtPass">Password</label><br>
+            <input type="password" id="txtPass" name="lname" required>
+            <div id="forgot">
+                <span><a>Forgot Password?</a></span>
+            </div>
+            <button id="btnSubmit" onclick="login()">Submit</button>
+            <div id="register">
+                <span>Not a member? <a href="signup.html">Signup now</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="func.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,447 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(239, 239, 239);
+}
+
+/* ----header---- */
+header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nameApp>h1 {
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.btn-login-signup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.btn-header {
+    font-size: 15px;
+    padding: 8px 20px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 10px;
+
+    background: rgb(255, 166, 0);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-header:hover {
+    background: rgb(129, 84, 0);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 5px 7px;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.userHead {
+    padding: 10px 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ececec;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+
+    top: 30px;
+    right: -8px;
+    z-index: 1;
+
+    align-items: center;
+    font-size: 16px;
+}
+
+.dropdown-content>i {
+    margin-right: 8px;
+}
+
+.dropdown>i {
+    margin-left: 8px;
+    color: rgb(137, 137, 137);
+}
+
+.dropdown>i:hover {
+    color: black;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown-content:hover {
+    cursor: pointer;
+    background: rgb(201, 201, 201);
+}
+
+
+
+/* ----container---- */
+.container {
+    width: 100%;
+    padding-top: 30px;
+    /* background: rgb(246, 248, 249); */
+    margin-bottom: 20px;
+
+}
+
+.works {
+    margin: auto;
+    width: 40%;
+    min-height: 80vh;
+    background: white;
+    /* box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.381); */
+}
+
+.works-input {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.277);
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+/* icon pen */
+#pen {
+    color: rgb(255, 177, 1);
+    font-size: 28px;
+}
+
+/* input */
+#txtInput {
+    cursor: auto;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    width: 70%;
+    padding: 5px;
+    /* background: rgb(246, 248, 249); */
+    line-height: 35px;
+    /* font-family: "Comic Sans MS", "Lucida Sans Unicode", sans-serif; */
+
+}
+
+/* list work */
+.allWorks {
+    margin-top: 35px;
+}
+
+/* a work of list */
+.items {
+    margin: 0 40px;
+    padding: 2px 1px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 16px;
+    position: absolute;
+    left: 1px;
+    display: none;
+    color: white;
+
+}
+
+input[type="checkbox"]:hover {
+    border: 2px solid rgb(255, 176, 17);
+}
+
+input[type="checkbox"]:checked~.content {
+    text-decoration: line-through;
+    color: gray;
+}
+
+input[type="checkbox"]:checked {
+    background: rgb(0, 184, 0);
+    border: 0;
+
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+/* content */
+.items div {
+    width: 95%;
+}
+
+.content {
+    font-size: 35px;
+    white-space: nowrap;
+    width: 94%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.content:hover {
+    color: rgb(109, 109, 109);
+    font-size: 36px;
+}
+
+/* icon delete */
+.del:hover {
+    color: red;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.del {
+    font-size: 25px;
+    color: black;
+}
+
+/* ----Login---- */
+.login {
+    background: rgb(255, 255, 255);
+    min-height: 50vh;
+    width: 23%;
+    margin: 50px;
+    border-radius: 5px;
+    padding-top: 15px;
+    position: absolute;
+    right: 35%;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.381);
+
+}
+
+.titleForm {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#login-form {
+    padding: 20px 20px;
+}
+
+#login-form label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#txtUser,
+#txtPass {
+    font-size: 17px;
+    padding: 5px 7px;
+    width: 100%;
+    outline: none;
+    margin: 5px 0 7px 0;
+    line-height: 25px;
+    border-radius: 5px;
+
+    background: rgb(246, 246, 246);
+    border: none;
+}
+
+#forgot {
+    margin: 5px 0;
+}
+
+#forgot a:hover {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#btnSubmit {
+    font-size: 18px;
+    padding: 6px;
+    width: 100%;
+    line-height: 24px;
+    font-weight: 700;
+    background: rgb(245, 159, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#btnSubmit:hover {
+    background: rgb(123, 205, 0);
+    cursor: pointer;
+    font-size: 19px;
+}
+
+#register {
+    text-align: center;
+}
+
+#register a {
+    text-decoration: none;
+}
+
+#register a:hover {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* ----Signup Form */
+.signup {
+    background: white;
+    width: 25%;
+    min-height: 60vh;
+    margin: 50px;
+    padding: 20px;
+
+    position: absolute;
+    right: 35%;
+
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.381);
+
+}
+
+.signup-form {
+    width: 100%;
+}
+
+.signup-form>div {
+    padding-left: 7px;
+}
+
+.require {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.nameUser {
+    width: 100%;
+}
+
+.inpName {
+    width: 48%;
+}
+
+.inpSignup {
+    position: relative;
+    left: -5px;
+    width: 88%;
+}
+
+.inpName,
+.inpSignup {
+    font-size: 17px;
+    padding: 5px 10px;
+    outline: none;
+    margin: 5px 0 10px 0;
+    line-height: 25px;
+
+
+
+    background: rgb(246, 246, 246);
+    border: none;
+}
+
+#btnCreate {
+    font-size: 18px;
+    padding: 6px;
+    width: 95%;
+    line-height: 25px;
+    font-weight: 700;
+    background: rgb(245, 159, 0);
+    color: white;
+    border: none;
+    margin: 10px 0 10px 7px;
+}
+
+#btnCreate:hover {
+    background: rgb(123, 205, 0);
+    cursor: pointer;
+    font-size: 19px;
+}
+
+
+.user {
+    /* display: inline-block; */
+    font-size: 19px;
+    color: gray;
+    background: rgb(246, 246, 246);
+    padding: 8px;
+
+}
+
+
+/* @media(max-width:480px) {
+    .works h1 {
+        font-size: 50px;
+    }
+
+    .works .works-input #pen {
+        font-size: 22px;
+    }
+
+    .works .works-input #txtInput {
+        font-size: 20px;
+    }
+
+    .allWorks .content {
+        font-size: 20px;
+        margin: 0 20px;
+    }
+
+    input[type="checkbox"] {
+        height: 15px;
+        width: 15px;
+    }
+} */

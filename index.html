@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>To Do App</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="nameApp">
+            <h1>Todo App</h1>
+        </div>
+        <div class="userHead" style="display: none;">
+            <div class="user-header">
+                <h3 class="userName-header">Vũ Hồ</h3>
+                <div class="dropdown">
+                    <i class="fa-solid fa-caret-down drop"></i>
+                    <div class="dropdown-content">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <p>Log out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-login-signup">
+            <div>
+                <button class="btn-header btnLogin" onclick="redirect('login')">Login</button>
+            </div>
+            <div>
+                <button class="btn-header btnSignup" onclick="redirect('signup')">Signup</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="works">
+            <div class="works-input">
+                <i class="fa-solid fa-pencil" id="pen"></i>
+                <input type="text" name="" id="txtInput" placeholder="Enter your task" autofocus maxlength="40">
+            </div>
+
+            <div class="allWorks" id="list">
+                <!-- <div class="items">
+                    <input type="checkbox" name="" class="checkWork">
+                    <div class="content">Hôm nay muốn ngủ cả ngày nguyên ngày</div>
+                    <i class="fa-solid fa-xmark del"></i>
+                </div> -->
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="func.js"></script>
+</body>
+
+</html>
